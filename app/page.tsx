@@ -177,7 +177,14 @@ export default function Home() {
             </div>
             <div className="space-y-3 p-6">
               <h2 className="text-xl font-semibold text-white">{data.title}</h2>
-              <p className="font-mono text-xs text-zinc-500">{data.date}</p>
+              <p className="font-mono text-xs text-zinc-500">
+                {data.date}
+                <span className="text-zinc-600">
+                  {" "}
+                  · {data.media_type.charAt(0).toUpperCase()}
+                  {data.media_type.slice(1)}
+                </span>
+              </p>
               <p className="text-sm leading-relaxed text-zinc-300">
                 {data.explanation.slice(0, 420)}
                 {data.explanation.length > 420 ? "…" : ""}
