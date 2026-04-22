@@ -158,7 +158,7 @@ export default function Home() {
 
       <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-6 py-10">
         {loading && (
-          <p className="animate-pulse text-zinc-500">Loading today&apos;s picture…</p>
+          <p className="animate-pulse text-zinc-500">Loading today&apos;s APOD…</p>
         )}
 
         {error && (
@@ -196,7 +196,7 @@ export default function Home() {
       </main>
 
       <footer className="mt-auto border-t border-zinc-800 px-6 py-6 text-center text-xs text-zinc-600">
-        Built with Next.js for classroom Vercel deployments.
+        Built with Next.js for classroom Vercel deployments. Media and copy from NASA APOD.
       </footer>
     </div>
   );
